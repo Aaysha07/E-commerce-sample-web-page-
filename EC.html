@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Products</title>
+    <style>
+        /* Basic Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+
+        /* Product List */
+        .product-list {
+            display: flex;
+            justify-content: center;  /* Center the products */
+            flex-wrap: wrap;  /* Allows wrapping if screen is small */
+            gap: 20px; /* Adds space between products */
+        }
+
+        /* Individual Product Styling */
+        .product {
+            width: 200px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #f9f9f9;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        button {
+            background: green;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background: darkgreen;
+        }
+    </style>
+</head>
+<body>
+<h2> Featured Product</h2>
+    <h1> Welcome to the E-commerce store</h1> <h
+    <div class="product-list">
+        <div class="product">
+            <img src="https://i.pinimg.com/736x/c9/e7/1e/c9e71e3bcfbaa598792ba1d1e41ebdd8.jpg" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>Rs.1000 </p>
+           <button>Add to Cart</button>
+      
+        </div>
+
+        <div class="product">
+            <img src="https://www.net-a-porter.com/variants/images/1647597283500451/in/w920_q60.jpg" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>Rs 1220</p>
+            <label>Select Size:</label>
+      <select onChange={(e) => setSize(e.target.value)} value={size}>
+        <option value="S">Small</option>
+        <option value="M">Medium</option>
+        <option value="L">Large</option>
+        <option value="XL">X-Large</option>
+      </select>
+      <button onClick={addToCart}>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://i.pinimg.com/736x/69/16/60/6916604e5bad1bb678cb137d2b1cfc9d.jpg" alt="Product 3">
+            <h3>Product3 </h3>
+            <p>Rs.3400</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://i.pinimg.com/736x/97/24/b8/9724b80fc40664fe5d61e9ab7a47dad6.jpg" alt="Product 4">
+            <h3>Product 4</h3>
+            <p>Rs.1290</p>
+            <label>Select Size:</label>
+      <select onChange={(e) => setSize(e.target.value)} value={size}>
+        <option value="S">Small</option>
+        <option value="M">Medium</option>
+        <option value="L">Large</option>
+        <option value="XL">X-Large</option>
+      </select>
+      <button onClick={addToCart}>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://i.pinimg.com/736x/38/73/77/387377d5f9d27bc85c806bf3a0f39cf7.jpg" alt="Product 5">
+            <h3>Product 5</h3>
+            <p>Rs.2300</p>
+            <button> Add to Cart</button>
+
+        </div>
+
+        <div class="product">
+            <img src="https://i.pinimg.com/736x/b1/1e/29/b11e2985a11149a7c9099eb0b7e5fcf4.jpg" alt="Product 6">
+            <h3>Product 6</h3>
+            <p>Rs.1300</p>
+            <label>Select Size:</label>
+            <select onChange={(e) => setSize(e.target.value)} value={size}>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+            <button onClick={addToCart}>Add to Cart</button>
+        </div>
+        </div>
+
+        <div class="product">
+            <img src="https://i.pinimg.com/736x/49/00/48/49004861dc1103527b8a9cea7ea7361b.jpg" alt="Product 7">
+            <h3>Product 7 </h3>
+            <p>Rs.3920</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://i.pinimg.com/736x/d2/3f/45/d23f45c8b76350d5629d50694dbfa5e7.jpg" alt="Product 8">
+            <h3>Product 8</h3>
+            <p>Rs.1230</p>
+            <label>Select Size:</label>
+            <select onChange={(e) => setSize(e.target.value)} value={size}>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+            <button onClick={addToCart}>Add to Cart</button>
+        </div>
+    </div>
+
+</body>
+</html>
